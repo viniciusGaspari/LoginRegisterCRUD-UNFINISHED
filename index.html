@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- LINK DOS ICONES -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- LINKS DO CSS -->
+    <link rel="stylesheet" href="assets/css/inputs&tBody.css">
+    <link rel="stylesheet" href="assets/css/WindowModal.css">
+
+    <!-- LINKS DOS SCRIPTS -->
+    <script src="assets/js/Inputs&tBody.js" defer></script>
+    <script src="assets/js/WindowModal.js" defer></script>
+
+    <title>Cadastro de Cliente</title>
+</head>
+
+<body>
+    <div id="windowModalContainer">
+        <div id="windowModalContent">
+            <button onclick="closeWindowModal()" id="closeWindowModal">x</button>
+            <h1>Registra os seus dados</h1>
+            <form id="inputsContainer">
+                <div id="inputContent">
+                    <div id="inputNameEmail">
+                        <div class="inputBox">
+                            <label for="name"><i class="fa-solid fa-user"></i>
+                                <input type="text" class="inputValue" id="name" placeholder="Insira seu nome" />
+                            </label>
+                        </div>
+                        <div class="inputBox">
+                            <label for="email"><i class="fa-solid fa-envelope"></i>
+                                <input type="email" class="inputValue" id="email" placeholder="Insira seu email" />
+                            </label>
+                        </div>
+                    </div>
+                    <div id="inputPhoneCity">
+                        <div class="inputBox">
+                            <label for="phone"><i class="fa-solid fa-phone"></i>
+                                <input type="number" class="inputValue" id="phone" placeholder="Insira seu numero de celular" />
+                            </label>
+                        </div>
+                        <div class="inputBox">
+                            <label for="city"><i class="fa-solid fa-city"></i>
+                                <input type="text" class="inputValue" id="city" placeholder="Insira nome da sua cidade" />
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div id="btnSubmitContainer">
+                    <button onclick="closeWindowModal()" id="submit" class="submit" type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <header id="clientSignUpTitle">
+        <h1>Cadastro de Clientes</h1>
+    </header>
+    <main>
+        <button onclick="openWindowModal()" id="clientSignUp" type="submit">Cadastrar</button>
+
+        <table class="tableContainer">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Cidade</th>
+                    <th>Celular</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+
+
+        </table>
+    </main>
+</body>
+</html>
